@@ -1,5 +1,5 @@
 import './App.css';
-
+import MainMap from "./mainmap";
 function App() {
   return (
     <div className='App'>
@@ -8,10 +8,12 @@ function App() {
         <p className='textLogo'>This is a test</p>
     </div>
     <div className='App-body'>
+          <div id='content'>
 
+              <MainMap />
+          </div>
     </div>
     </div>
-    
   );
 }
 

@@ -63,6 +63,7 @@
   border: 5px solid #61dafb ;
   color: black;
   height: 0vh;
+
 }
 
 p{
@@ -76,4 +77,12 @@ p{
   to {
     transform: rotate(360deg);
   }
+}
+
+#content{
+  width: 80%;
+}
+
+#content ul{
+  display: none;
 }
