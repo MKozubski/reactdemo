@@ -3,8 +3,10 @@
 }
 
 .App-logo {
-  height: 40vmin;
+  margin-top: 5px;
+  height: 60px;
   pointer-events: none;
+  width: 60px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -13,19 +15,58 @@
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.textLogo{
+  pointer-events: none;
+  margin-top: 15px;
+  position: absolute;
+  animation: textLogo infinite 5s linear;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .textLogo {
+    animation: textLogo infinite 5s;
+
+  }
+}
+
+@keyframes textLogo {
+  0%   {left: 15%;}
+  50%  {left:  70%;}
+  100% {left: 15%;}
+}
+
+
+.App-banner{
+  background-color: #e2eafb;
+  border-style: double;
+  border: 5px solid #61dafb ;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  padding-left: 25px;
+  font-size: calc(10px + 2vmin);
+  color: black;
+  margin-bottom: 0px;
+}
+
+.App-body {
+  background-color: #e6edfc;
+  min-height: 86vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  border-style: double;
+  border: 5px solid #61dafb ;
+  color: black;
+  height: 0vh;
 }
 
-.App-link {
-  color: #61dafb;
+p{
+  margin-top: 1px;
 }
 
 @keyframes App-logo-spin {
